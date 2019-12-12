@@ -1,3 +1,13 @@
+I Installed this package
+npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
+and these
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/vue-fontawesome
+npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+
+
 # Front-end Engineer Challenge
 
 Welcome to PushBots interview process, here you'll be presented with a fairly simple challenge where you'll get to work with our stack and get a feel of how it is to work at PushBots.
