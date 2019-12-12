@@ -1,75 +1,187 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+h3 {
+  color: black;
+}
+h5 {
+  color: rgb(148, 148, 148);
+  display: inline;
+  margin: 10px 0px 10px 0px;
+}
+#container {
+  width: 65%;
+  height: auto;
+  margin: auto;
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#box {
+  width: 47%;
+  height: auto;
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+}
+#faIcon {
+  margin-right: 20px;
+}
+</style>
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank"> documentation </a>.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
-          </a>
-          <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-container id="container">
+    <div id="box">
+      <h3>spa</h3>
+      <h5>
+        <span>
+          <font-awesome-icon :icon="['fas', 'mobile']" />
+        </span>
+        840 users
+      </h5>
+      <h5>
+        <span>
+          <font-awesome-icon :icon="['fab', 'chrome']" />
+          <font-awesome-icon :icon="['fab', 'apple']" />
+        </span>
+      </h5>
+      <h5 style="float:right;">
+        <button>
+          <font-awesome-icon :icon="['fas', 'ellipsis-v']" />
+        </button>
+      </h5>
+      <div class="clear"></div>
+      <line-chart></line-chart>
+      <h5>
+        <span>
+          <font-awesome-icon
+            id="faIcon"
+            :icon="['fas', 'paper-plane']"
+            size="lg"
+          />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'clock']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'mobile']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'users']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'cog']" size="lg" />
+          <font-awesome-icon
+            id="faIcon"
+            :icon="['fas', 'chart-area']"
+            size="lg"
+          />
+        </span>
+      </h5>
+    </div>
+    <div id="box">
+      <h3>EldolarLive</h3>
+      <h5>
+        <span>
+          <font-awesome-icon :icon="['fas', 'mobile']" />
+        </span>
+        840 users
+      </h5>
+      <h5>
+        <span>
+          <font-awesome-icon :icon="['fab', 'chrome']" />
+          <font-awesome-icon :icon="['fab', 'apple']" />
+        </span>
+      </h5>
+      <h5 style="float:right;">
+        <button>
+          <font-awesome-icon :icon="['fas', 'ellipsis-v']" />
+        </button>
+      </h5>
+      <div class="clear"></div>
+      <line-chart></line-chart>
+      <h5>
+        <span>
+          <font-awesome-icon
+            id="faIcon"
+            :icon="['fas', 'paper-plane']"
+            size="lg"
+          />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'clock']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'mobile']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'users']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'cog']" size="lg" />
+          <font-awesome-icon
+            id="faIcon"
+            :icon="['fas', 'chart-area']"
+            size="lg"
+          />
+        </span>
+      </h5>
+    </div>
+    <div id="box">
+      <h3>PushBots</h3>
+      <h5>
+        <span>
+          <font-awesome-icon :icon="['fas', 'mobile']" />
+        </span>
+        840 users
+      </h5>
+      <h5>
+        <span>
+          <font-awesome-icon :icon="['fab', 'chrome']" />
+          <font-awesome-icon :icon="['fab', 'apple']" />
+        </span>
+      </h5>
+      <h5 style="float:right;">
+        <button>
+          <font-awesome-icon :icon="['fas', 'ellipsis-v']" />
+        </button>
+      </h5>
+      <div class="clear"></div>
+      <line-chart></line-chart>
+      <h5>
+        <span>
+          <font-awesome-icon
+            id="faIcon"
+            :icon="['fas', 'paper-plane']"
+            size="lg"
+          />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'clock']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'mobile']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'users']" size="lg" />
+          <font-awesome-icon id="faIcon" :icon="['fas', 'cog']" size="lg" />
+          <font-awesome-icon
+            id="faIcon"
+            :icon="['fas', 'chart-area']"
+            size="lg"
+          />
+        </span>
+      </h5>
+    </div>
+  </v-container>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
+import axios from 'axios'
+import LineChart from '@/components/LineChart'
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
+  components: { LineChart },
+
+  /*  async asyncData() {
+    const { data } = await axios.get(`
+    https://newsapi.org/v2/top-headlines?country=us&category=music&apiKey=6ae3e6f1aed346f993acd380ae98acaf`)
+    return { title: data.articles[0].title }
+  } */
+  async asyncData() {
+    const { data } = await axios.get(`
+    https://newsapi.org/v2/top-headlines?country=us&category=music&apiKey=6ae3e6f1aed346f993acd380ae98acaf`)
+    return { articles: data.articles }
   }
+
+  /*  asyncData() {
+    return axios
+      .get(
+        `https://newsapi.org/v2/top-headlines?country=us&category=music&apiKey=6ae3e6f1aed346f993acd380ae98acaf`
+      )
+      .then((res) => {
+        return { titles: res.articles[0].title }
+      })
+  } */
 }
 </script>
